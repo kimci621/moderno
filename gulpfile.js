@@ -23,7 +23,7 @@ gulp.task('script', function(){//нужно так же проделать с cs
     ])
     .pipe(concat('libs.min.js'))//конкатинация(concat) сразу прописывает им название
     .pipe(uglify())//сжимает файлы
-    .pipe(gulp.dest('test_app/js'))//кидает их в данную директорию
+    .pipe(gulp.dest('app/js'))//кидает их в данную директорию
 });// объеденяем и сжимаем все файлы js в один файл
 
 gulp.task('maincss', function(){//таска с css
@@ -34,45 +34,45 @@ gulp.task('maincss', function(){//таска с css
     ])
     .pipe(concat('libs.min.css'))//конкатинация(concat) сразу прописывает им название
     .pipe(cssmin())//сжимает файлы
-    .pipe(gulp.dest('test_app/css'))//кидает их в данную директорию
+    .pipe(gulp.dest('app/css'))//кидает их в данную директорию
 });// подключаем все файлы js в один файл
 
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "test_app/"//указываем путь что релоадить
+            baseDir: "app/"//указываем путь что релоадить
         }
     });
 });// подрубаем browser sync
 
 
 gulp.task('sass', function(){
-    return gulp.src('test_app/scss/main.scss')
+    return gulp.src('app/scss/**/*.scss')
         .pipe(sass({outputStyle: 'compressed'}))// sass() - ф-ция преобразует  scss в css в формате compressed
         .pipe(rename({suffix: '.min'}))//меняет название преобразованного файла, в данном случае добавляет . min
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 8 versions']
         }))// подрубили автопрефиксер, если полезут ошибки то это нормально, выгло обновление, что-то убрали/переименовали и тд и тп
-        .pipe(gulp.dest('test_app/css'))//куда отправлять sass() файлы  
+        .pipe(gulp.dest('app/css'))//куда отправлять sass() файлы  
         //ВСЕ ПЛАГИНЫ GULP МОЖНО НАЙТИ ПО НАЗВАНИЮ НА САЙТЕ С ПРИМЕРАМИ ИСПОЛЬЗОВАНИЯ(sass(), rename() и тд)
         .pipe(browserSync.reload({stream: true}))// .reload есть в параметрах пайпа, stream это json browserSync, теперь обновляется css
 });
 // Тут мы прописали таску с галпом, таска вызывает функцию, которая указывает путь для галпа в наш scss файл, даллее методом pipe() _*надо посмотреть подробнее*_ и pipe преобразует такой структурой и scss в css. pipe() - это некая труба, предназначенная для преобразования каких-то данных в другие, т.е. заглатывает одни данные и выпускает преобразованные 
 
 gulp.task('html', function(){
-    return gulp.src('test_app/*.html')
+    return gulp.src('app/*.html')
     .pipe(browserSync.reload({stream: true}))// Теперь обновляется html код
 });
 gulp.task('js', function(){
-    return gulp.src('test_app/js/*.js')
+    return gulp.src('app/js/*.js')
     .pipe(browserSync.reload({stream: true}))// Теперь обновляется js код
 });
 
 //надо прописать автосинхронизация для того чтобы все работало на автомате и не писать каждый раз gulp sass в файле *.scss
 gulp.task('watch', function(){
-    gulp.watch('test_app/scss/main.scss', gulp.parallel('sass'))
-    gulp.watch('test_app/*.html', gulp.parallel('html'))
-    gulp.watch('test_app/js/*.js', gulp.parallel('js'))
+    gulp.watch('app/scss/main.scss', gulp.parallel('sass'))
+    gulp.watch('app/*.html', gulp.parallel('html'))
+    gulp.watch('app/js/*.js', gulp.parallel('js'))
     
     // gulp.task('watch')- это имя таски
     // gulp.watch('') - за кем следить
