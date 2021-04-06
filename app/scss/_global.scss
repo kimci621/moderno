@@ -7,7 +7,9 @@ html{
 }
 
 a{
-    display: inline;
+    display: inline-block;
+    text-decoration: none;
+    color: $color-text;
 }
 ul,li{
     margin: 0;
@@ -17,6 +19,7 @@ ul,li{
 
 body{
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{

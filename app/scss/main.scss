@@ -1,2 +1,35 @@
 @import 'vars';
 @import 'global';
+
+.header_top-inner{
+    display: flex;
+    justify-content: space-between;
+    height: 91px;
+    align-items: center; //чтобы все было в центре
+}
+// .header_top__logo{
+
+// }
+.header_top__text{
+    margin-left: auto; //перемещает максимально от лево(т.е. к правому)
+    margin-right: 25px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    font-size: 15px;
+    color: $color-text;
+}
+// .header_top__text span{
+    
+// }
+// .text__phone{
+
+// }
+// .header__interact{
+
+// }
+
+
+
+.header__menu{
+    margin-top: 100px;
+}

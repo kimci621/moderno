@@ -70,7 +70,7 @@ gulp.task('js', function(){
 
 //надо прописать автосинхронизация для того чтобы все работало на автомате и не писать каждый раз gulp sass в файле *.scss
 gulp.task('watch', function(){
-    gulp.watch('app/scss/main.scss', gulp.parallel('sass'))
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'))
     gulp.watch('app/*.html', gulp.parallel('html'))
     gulp.watch('app/js/*.js', gulp.parallel('js'))
     
