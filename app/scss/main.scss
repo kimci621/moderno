@@ -7,29 +7,64 @@
     height: 91px;
     align-items: center; //чтобы все было в центре
 }
-// .header_top__logo{
-
-// }
 .header_top__text{
     margin-left: auto; //перемещает максимально от лево(т.е. к правому)
-    margin-right: 25px;
+    margin-right: 50px;
     font-family: 'Roboto', sans-serif;
     line-height: 24px;
     font-size: 15px;
     color: $color-text;
+        span{
+            color: $color-red;
+        }
+        a{
+            color: $color-text;
+        }
 }
-// .header_top__text span{
-    
-// }
-// .text__phone{
-
-// }
-// .header__interact{
-
-// }
+.header__interact{
+    .basket{
+        margin-right: 20px !important;
+    }
+    .header__btn-green{
+        padding: 5px;
+        width: 75px;
+        border-radius: 4px;
+        background-color: $color-green;
+        color: $color-white;
+        font-size: 12px;
+    }
+    .header__btn-red{
+        margin-left: 8px !important;
+        padding: 5px;
+        width: 75px;
+        border-radius: 4px;
+        background-color: $color-red;
+        color: $color-white;
+        font-size: 12px;
+    }
+}
 
 
 
 .header__menu{
-    margin-top: 100px;
+    ul{
+        margin: 0;
+    }
+    background-color: $bg-grey;
+    height: 60px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    .menu__list{
+        a{
+            color: $color-white;
+            font-size: 14px;
+        }
+        li{
+            display: inline-block;
+            & + li{
+                margin-left: 30px;
+            }
+        }
+    }
 }

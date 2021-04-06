@@ -7,19 +7,24 @@ html{
 }
 
 a{
-    display: inline-block;
-    text-decoration: none;
+    display: inline-block !important;
+    text-decoration: none !important;
+    margin: 0 auto;
+    text-align: center !important;
     color: $color-text;
 }
 ul,li{
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style: none !important;
+}
+li{
+    display: inline-block;
 }
 
 body{
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
+    margin: 0 auto !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .container{
