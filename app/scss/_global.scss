@@ -32,3 +32,15 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.container-fluid{ //fullscreen container
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 100%;
+}
+
+@media(max-width: 720px){
+    .container-fluid{
+        padding: 0 15px;
+    }
+}

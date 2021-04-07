@@ -70,7 +70,7 @@
 }
 
 .search{
-    background-image: url(../img/greenbg.png); //для фона используй это свойство!!
+    background-image: url(../img/greenbg.jpg); //для фона используй это свойство!!
     background-repeat: no-repeat; //после заполнения контентом не будет дублироваться
     background-size: cover; //липнет по краям экрана
     background-position: center; //где будет контент
@@ -111,7 +111,7 @@
                     letter-spacing: 0.05em;
                     color: #90a4ae;
                     padding-left: 25px;
-                    padding-right: 30px;
+                    padding-right: 50px;
                     outline: none;
                     &:focus{
                         border: 1px solid $color-text;
@@ -126,5 +126,158 @@
                 }
             }
         }
+    }
+}
+
+.products{
+    .products__tittle{
+        margin-top: 120px;
+        text-align: center;
+        font-size: 36px;
+        line-height: 60px;
+        font-weight: 700;
+        color: $bg-grey;
+        margin-bottom: 60px;
+    }
+    .products__category-btn{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+        button{
+            text-align: center;
+            padding: 12px 22px;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 500;
+            color: $bg-grey;
+            background-color: transparent;
+            border: none;
+        }
+        button:hover{
+            background-color: $color-red;
+            color: $color-white;
+            transition: 0.4s;
+        }
+    }
+    .products__btn{
+        margin-top: 63px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 240px;
+        button{
+            & + button{
+                margin-left: 13px;
+            }
+            width: 163px;
+            height: 52px;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            color: $bg-grey;
+        }
+        button:hover{
+            box-shadow: 1px 1px 3px -1px;
+            transition: 0.5s;
+        }
+    }
+}
+
+.products__items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .item{
+        min-width: 442px;
+        max-width: 442px;
+        margin-bottom: 35px;
+        .item__img{
+            min-height: 250px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 30px;
+        }
+        .item__name{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 30px 40px;
+            .item__text{
+                max-width: 300px;
+                max-height: 90px;
+                white-space: nowrap; /* Запрещаем перенос строк */
+                overflow: hidden; /* Обрезаем все, что не помещается в область */
+                .item__tittle{
+                    font-size: 18px;
+                    line-height: 20px;
+                    font-weight: 500;
+                    color: $bg-grey;
+                    margin-bottom: 11px;
+                }
+                .item__description{
+                    font-size: 14px;
+                    line-height: 16px;
+                    font-weight: 500;
+                    color: #8bc34a;
+                }
+            }
+            .item__price{
+                font-size: 20px;
+                line-height: 20px;
+                font-weight: 700;
+                color: $bg-grey;
+            }
+        }
+        .item__user{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 30px 32px;
+            
+            .user{
+                text-align: center;
+                max-width: 250px;
+                max-height: 30px;
+                .user__avatar{
+                    margin-right: 13px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: #b5b5b5;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+                .user__name{
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 500;
+                    color: #546e7a;
+                }
+            }
+            .rating{
+                .user__rating{
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    font-family: Roboto;
+                    font-size: 12px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    color: #b0bec5;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    img{
+                        margin-right: 14px;
+                    }
+                    span{
+                        color: $bg-grey; 
+                    }
+                }
+            }
+        }
+    }
+    .item:hover{
+        box-shadow: 0px 1px 2px 0px rgba(205,214,222,0.75);
     }
 }

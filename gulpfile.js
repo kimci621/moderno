@@ -19,7 +19,8 @@ let cssmin = require('gulp-cssmin');
 gulp.task('script', function(){//нужно так же проделать с css
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
-        'node_modules/magnific-popup/dist/jquery.magnific-popup.js', // теперь эти 2 файла = 'script'
+        'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+        'node_modules/mixitup/dist/mixitup.js', // теперь эти 3 файла = 'script'
     ])
     .pipe(concat('libs.min.js'))//конкатинация(concat) сразу прописывает им название
     .pipe(uglify())//сжимает файлы
@@ -29,7 +30,7 @@ gulp.task('script', function(){//нужно так же проделать с cs
 gulp.task('maincss', function(){//таска с css
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.css',
-        'node_modules/magnific-popup/dist/magnific-popup.css',
+        'node_modules/magnific-popup/dist/magnific-popup.css', 
         'node_modules/normalize.css/normalize.css',// теперь эти 3 файлa = 'maincss'
     ])
     .pipe(concat('libs.min.css'))//конкатинация(concat) сразу прописывает им название
