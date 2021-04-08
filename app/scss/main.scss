@@ -198,6 +198,10 @@
             background-position: center;
             background-size: cover;
             margin-bottom: 30px;
+            .popular{
+                top: 0;
+                left: 0;
+            }
         }
         .item__name{
             display: flex;
