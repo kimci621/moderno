@@ -21,5 +21,8 @@ $(function(){
             arrows: false,
 
         });
-    });
+        // if(window.matchMedia('(max-width: 768px)').matches){
+        //     // do functionality on screens smaller than 768px
+        // }
+    });  
 });

@@ -274,7 +274,8 @@
         }
     }
     .item:hover{
-        box-shadow: 0px 1px 2px 0px rgba(205,214,222,0.75);
+        box-shadow: 0px 1px 2px 0px rgba(144, 150, 155, 0.75);
+        transition: 0.3s;
     }
 }
 
@@ -285,4 +286,78 @@
     font-weight: 700;
     color: $bg-grey;
     margin-bottom: 60px;
+}
+
+.why_us{
+    max-width: 100%;
+    min-height: 616px;
+    background-color: $bg-grey;
+    .why_us__tittle{
+        padding-top: 124px;
+        text-align: center;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 700;
+        color: $color-white;
+    }
+    .why_us__items{
+        padding: 83px 150px ;
+        display: flex;
+        justify-content: space-between;
+        .why_us__item{
+            margin: 0 auto;
+            width: 325px;
+            .item__icon{
+                margin: 0 auto;
+                width: 113px;
+                height: 113px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                margin-bottom: 33px;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    padding-top: 20px;
+                    background: transparent;
+                }
+            }
+            .item__icon-2{
+                background-color: $color-green;
+                margin: 0 auto;
+                width: 113px;
+                height: 113px;
+                border-radius: 50%;
+                margin-bottom: 33px;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    padding-top: 20px;
+                    background: transparent;
+                }
+            }
+            .item__tittle{
+                text-align: center;
+                margin-bottom: 26px;
+                font-size: 24px;
+                line-height: 28px;
+                font-weight: 500;
+                color: $color-white;
+            }
+            .item__tittle-2{
+                text-align: center;
+                margin-bottom: 26px;
+                font-size: 24px;
+                line-height: 28px;
+                font-weight: 500;
+                color: $color-green;
+            }
+            .item__text{
+                text-align: center;
+                font-size: 15px;
+                line-height: 24px;
+                font-weight: 400;
+                color: $color-text;
+            }
+        }
+    }
 }
