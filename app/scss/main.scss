@@ -361,3 +361,57 @@
         }
     }
 }
+
+.authors{
+    width: 100%;
+    min-height: 761px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .authors__item{
+        max-width: 653px;
+        width: 100%;
+        min-height: 216px;
+        background-color: $color-green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .authors__tittle{
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 400;
+            color: $color-white;
+            span{
+                font-weight: 700;
+            }
+        }
+        .authors_btn{
+            width: 225px;
+            height: 63px;
+            margin-left: 47px;
+            button{
+                border: none;
+                background-color: #ffffff;
+                padding: 20px 40px;
+                a{
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    color: $bg-grey;
+                }
+                
+            }
+            button:hover{
+                border: 1px solid green;
+                transition: 0.5s;
+                background-color: $bg-grey;
+                a{
+                    color: $color-white; 
+                }  
+            }
+        }
+    }
+}
