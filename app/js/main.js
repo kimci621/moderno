@@ -12,4 +12,14 @@ $(function(){
         });
     });
 
+    $(function () {
+        $(".products__slider").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            arrows: false,
+
+        });
+    });
 });

@@ -34,8 +34,8 @@ body{
 }
 
 .container-fluid{ //fullscreen container
-    margin: 0 auto;
-    padding: 0 30px;
+    margin: 0 auto !important;
+    padding: 0 40px;
     max-width: 100%;
 }
 
@@ -49,3 +49,36 @@ body{
     display: inline-block;
     margin-right: 13px;
 }
+
+.slick-dots{
+    font-size: 0;
+    text-align: center;
+    margin: 0 auto;
+    button{
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px inset rgba(250, 250, 250, 0.603);
+        margin-bottom: 121px;
+    }
+    button:hover{
+        background-color: #8bc34a;
+        transition: 0.3s;
+    }
+    ul{
+        display: inline-block;
+    }
+    li{
+        & + li{
+            margin-left: 8px;
+        }
+        &.slick-active{
+            button{
+                background-color: #8bc34a;
+            }
+        }
+    }
+
+}
+
