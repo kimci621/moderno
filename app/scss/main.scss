@@ -33,6 +33,10 @@
         color: $color-white;
         font-size: 12px;
     }
+    .header__btn-green:hover{
+        color: $color-text;
+        transition: 0.3s;
+    }
     .header__btn-red{
         margin-left: 8px !important;
         padding: 5px;
@@ -41,6 +45,10 @@
         background-color: $color-red;
         color: $color-white;
         font-size: 12px;
+    }
+    .header__btn-red:hover{
+        color: $color-text;
+        transition: 0.3s;
     }
 }
 
@@ -59,6 +67,10 @@
         a{
             color: $color-white;
             font-size: 14px;
+        }
+        a:hover{
+            color: $color-text;
+            transition: 0.3s;
         }
         li{
             display: inline-block;
@@ -257,26 +269,6 @@
                     line-height: 20px;
                     font-weight: 500;
                     color: #546e7a;
-                }
-            }
-            .rating{
-                .user__rating{
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
-                    font-family: Roboto;
-                    font-size: 12px;
-                    line-height: 22px;
-                    font-weight: 400;
-                    color: #b0bec5;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    img{
-                        margin-right: 14px;
-                    }
-                    span{
-                        color: $bg-grey; 
-                    }
                 }
             }
         }

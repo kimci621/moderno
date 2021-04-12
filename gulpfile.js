@@ -20,7 +20,8 @@ gulp.task('script', function(){//нужно так же проделать с cs
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-        'node_modules/mixitup/dist/mixitup.js', // теперь эти 3 файла = 'script'
+        'node_modules/mixitup/dist/mixitup.js',
+        'node_modules/rateyo/src/jquery.rateyo.js',
     ])
     .pipe(concat('libs.min.js'))//конкатинация(concat) сразу прописывает им название
     .pipe(uglify())//сжимает файлы
@@ -31,7 +32,8 @@ gulp.task('maincss', function(){//таска с css
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/magnific-popup/dist/magnific-popup.css', 
-        'node_modules/normalize.css/normalize.css',// теперь эти 3 файлa = 'maincss'
+        'node_modules/normalize.css/normalize.css',
+        'node_modules/rateyo/src/jquery.rateyo.css',
     ])
     .pipe(concat('libs.min.css'))//конкатинация(concat) сразу прописывает им название
     .pipe(cssmin())//сжимает файлы
