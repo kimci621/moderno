@@ -1,60 +1,64 @@
-html{
+html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
-a{
+a {
     display: inline-block !important;
     text-decoration: none !important;
     margin: 0 auto;
     text-align: center !important;
     color: $color-text;
 }
-ul,li{
+ul,
+li {
     margin: 0;
     padding: 0;
     list-style: none !important;
 }
-li{
+li {
     display: inline-block;
 }
 
-body{
+body {
     margin: 0 auto !important;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: "Roboto", sans-serif !important;
 }
 
-.container{
-    max-width: 1200px;
+.container {
+    max-width: 1200px !important;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-.container-fluid{ //fullscreen container
+.container-fluid {
+    //fullscreen container
     margin: 0 auto !important;
     padding: 0 40px;
     max-width: 100%;
 }
 
-@media(max-width: 720px){
-    .container-fluid{
+@media (max-width: 720px) {
+    .container-fluid {
         padding: 0 15px;
     }
 }
 
-.rateyo{
+.rateyo {
     display: inline-block;
     margin-right: 13px;
 }
 
-.slick-dots{
+.slick-dots {
     font-size: 0;
     text-align: center;
     margin: 0 auto;
-    button{
+    button {
         width: 16px;
         height: 16px;
         background-color: #fff;
@@ -62,23 +66,46 @@ body{
         border: 1px inset rgba(250, 250, 250, 0.603);
         margin-bottom: 121px;
     }
-    button:hover{
+    button:hover {
         background-color: #8bc34a;
         transition: 0.3s;
     }
-    ul{
+    ul {
         display: inline-block;
     }
-    li{
-        & + li{
+    li {
+        & + li {
             margin-left: 8px;
         }
-        &.slick-active{
-            button{
+        &.slick-active {
+            button {
                 background-color: #8bc34a;
             }
         }
     }
-
+}
+// sprite css social links 
+.bg-facebook_ico {
+    width: 28px; height: 28px;
+    background: url('css_sprites.png') -7px -7px;
 }
 
+.bg-linkedin_ico {
+    width: 28px; height: 28px;
+    background: url('css_sprites.png') -49px -7px;
+}
+
+.bg-pinterest_ico {
+    width: 28px; height: 28px;
+    background: url('css_sprites.png') -91px -7px;
+}
+
+.bg-twitter_ico {
+    width: 28px; height: 28px;
+    background: url('css_sprites.png') -133px -7px;
+}
+
+.bg-youtube_ico {
+    width: 28px; height: 28px;
+    background: url('css_sprites.png') -175px -7px;
+}
