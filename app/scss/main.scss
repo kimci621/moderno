@@ -248,12 +248,15 @@
         .item__user{
             display: flex;
             justify-content: space-between;
-            margin: 0 30px 32px;
+            margin: 0px 30px 32px;
             
             .user{
                 text-align: center;
                 max-width: 250px;
                 max-height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 .user__avatar{
                     margin-right: 13px;
                     width: 30px;
