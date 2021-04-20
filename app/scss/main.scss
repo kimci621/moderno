@@ -50,25 +50,23 @@
         color: $color-text;
         transition: 0.3s;
     }
-    .basket {
-        position: relative;
+    .circle-header {
         width: 34px;
         height: 34px;
-        background-color: #f5f5f5;
+        background-color: #ececec;
         border-radius: 50%;
         margin-right: 26px;
     }
-    .basket::before {
-        content: "\e93a";
-        font-family: "icomoon";
-        font-size: 14px;
-        color: #a0a0a0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .basket:hover{
+    // .basket{
+    //     content: "\e93a";
+    //     font-family: "icomoon";
+    //     font-size: 14px;
+    //     color: #a0a0a0;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    // }
+    .circle-header:hover{
         box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.253);
         transition: 0.4s;
     }
