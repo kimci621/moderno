@@ -30,17 +30,17 @@ body {
     font-family: "Roboto", sans-serif !important;
 }
 
-.container {
+body .container {
     max-width: 1200px !important;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-.container-fluid {
+body .container-fluid {
     //fullscreen container
     margin: 0 auto !important;
-    padding: 0 40px;
-    max-width: 100%;
+    padding: 0 40px !important;
+    max-width: 100% !important;
 }
 
 @media (max-width: 720px) {
@@ -84,28 +84,33 @@ body {
         }
     }
 }
-// sprite css social links 
+// sprite css social links
 .bg-facebook_ico {
-    width: 28px; height: 28px;
-    background: url('../img/icons/social_sprites.png') -7px -7px;
+    width: 28px;
+    height: 28px;
+    background: url("../img/icons/social_sprites.png") -7px -7px;
 }
 
 .bg-linkedin_ico {
-    width: 28px; height: 28px;
-    background: url('../img/icons/social_sprites.png') -49px -7px;
+    width: 28px;
+    height: 28px;
+    background: url("../img/icons/social_sprites.png") -49px -7px;
 }
 
 .bg-pinterest_ico {
-    width: 28px; height: 28px;
-    background: url('../img/icons/social_sprites.png') -91px -7px;
+    width: 28px;
+    height: 28px;
+    background: url("../img/icons/social_sprites.png") -91px -7px;
 }
 
 .bg-twitter_ico {
-    width: 28px; height: 28px;
-    background: url('../img/icons/social_sprites.png') -133px -7px;
+    width: 28px;
+    height: 28px;
+    background: url("../img/icons/social_sprites.png") -133px -7px;
 }
 
 .bg-youtube_ico {
-    width: 28px; height: 28px;
-    background: url('../img/icons/social_sprites.png') -175px -7px;
+    width: 28px;
+    height: 28px;
+    background: url("../img/icons/social_sprites.png") -175px -7px;
 }
