@@ -1,14 +1,14 @@
-$(function(){
+$(function () {
 
-    var mixer = mixitup('.products');
+    
 
     $(function () {
         $(".rateyo").rateYo({
-          rating: 5,
-          starWidth: "12px",
-          ratedFill: "#FFA726",
-          halfStar: true,
-        //   readonly: true,
+            rating: 5,
+            starWidth: "12px",
+            ratedFill: "#FFA726",
+            halfStar: true,
+            //   readonly: true,
         });
     });
 
@@ -23,5 +23,11 @@ $(function(){
         // if(window.matchMedia('(max-width: 768px)').matches){
         //     // do functionality on screens smaller than 768px
         // }
-    });  
+    });
+
+    $('.menu-burger').on('click', function(){
+        $('.menu__list').slideToggle(); //drop from jq
+    });
+
+    var mixer = mixitup('.products');
 });
