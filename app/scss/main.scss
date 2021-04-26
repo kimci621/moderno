@@ -28,9 +28,9 @@
     position: relative;
 
     // <---------- активация почты, оповещений, user info( а так же их отключение) ------------>
-    .active {
-        // display: none !important;
-    }
+    // .active {
+    //     display: none !important;
+    // }
 
     .header__btn-green {
         display: none;
@@ -89,9 +89,9 @@
     // кнопка red (logout)
     .header__btn-red-logout {
         display: block !important;
-        &.header__btn-red-logout--off {
+        // &.header__btn-red-logout--off {
             // display: none !important;
-        }
+        // }
     }
     // header icons (3)
     .circle-header {
@@ -240,6 +240,7 @@
             top: 0;
             transition: all 0.5s;
             border: 1px solid #cccccc;
+            z-index: 999;
         }
     }
     //
@@ -357,6 +358,7 @@
             overflow: auto;
             top: 0;
             transition: all 0.5s;
+            z-index: 999;
         }
     }
     //
@@ -471,6 +473,7 @@
             padding: 0px 0px 13px;
             top: 0;
             transition: all 0.5s;
+            z-index: 999;
         }
     }
     //
@@ -571,6 +574,7 @@
             border-width: 1px;
             transition: all 0.5s;
             top: 0;
+            z-index: 999;
         }
     }
 }
@@ -602,18 +606,20 @@
             }
         }
     }
+
 }
 //
 // search section
 //
 .search {
-    background-image: url(../img/greenbg.jpg); //для фона используй это свойство!!
+    background-image: url(../img/greenbg.jpg);
     background-repeat: no-repeat; //после заполнения контентом не будет дублироваться
     background-size: cover; //липнет по краям экрана
-    background-position: center; //где будет контент
-    min-height: 534px;
+    background-position: center;
+    height: 534px;
+    position: relative;
     .search-inner {
-        padding: 160px 0 100px; // внизу паддинг оставляем для возможного будущего расширения(заполнения контентом)
+        padding: 160px 0 100px; // Для возможного будущего расширения
         text-align: center;
         .search-inner__tittle {
             font-size: 48px;
@@ -630,14 +636,15 @@
             margin-bottom: 50px;
         }
         .search-inner__form {
+            position: absolute;
             max-width: 670px;
             margin: 0 auto;
             position: relative;
             form {
                 input {
                     display: block;
+                    max-width: 670px;
                     width: 100%;
-                    width: 670px;
                     height: 56px;
                     box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
                     border: none;
