@@ -1,30 +1,4 @@
 $(function () {
-
-    
-
-    $(function () {
-        $(".rateyo").rateYo({
-            rating: 5,
-            starWidth: "12px",
-            ratedFill: "#FFA726",
-            halfStar: true,
-            //   readonly: true,
-        });
-    });
-
-    $(function () {
-        $(".products__slider").slick({
-            dots: true,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            arrows: false,
-        });
-        // if(window.matchMedia('(max-width: 768px)').matches){
-        //     // do functionality on screens smaller than 768px
-        // }
-    });
-
     $('.menu-burger').on('click', function(){
         $('.menu__list').slideToggle(); //drop from jq
     });
@@ -38,10 +12,54 @@ $(function () {
     $('.menu-burger').on('click', function(){
         $('.menu__list').toggleClass('--active');
     });
+    
+    if(window.matchMedia('(max-width: 1163px)').matches){
+        $(".tutorial_content").slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+        });
+    };
 
-    $('.fix').on('click', function(){
-        $('.menu-burger').toggleClass('_hiden');
+    if(window.matchMedia('(max-width: 1000px)').matches){
+        $(".products__slider").slick({
+            arrows: false,
+            dots: true,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    };
+
+    if(window.matchMedia('(min-width: 1879px)').matches){
+        $(".products__slider").slick({
+            arrows: false,
+            dots: true,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+        });
+    };
+
+    if(window.matchMedia('(max-width: 1450px)').matches){
+        $(".products__slider").slick({
+            arrows: false,
+            dots: true,
+            infinite: false,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+        });
+    };
+
+
+    $(function () {
+        $(".rateyo").rateYo({
+            rating: 5,
+            starWidth: "12px",
+            ratedFill: "#FFA726",
+            halfStar: true,
+        });
     });
-
+    
     var mixer = mixitup('.products');
 });

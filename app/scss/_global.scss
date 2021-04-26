@@ -114,3 +114,32 @@ body .container-fluid {
     height: 28px;
     background: url("../img/icons/social_sprites.png") -175px -7px;
 }
+
+.slick-arrow{
+    border: none;
+    background-color: transparent;
+}
+.slick-next::before{
+    content: "\e909";
+    font-family: 'icomoon';
+    color: $bg-grey;
+    font-size: 20px;
+}
+
+.slick-prev::before{
+    content: "\e90a";
+    font-family: 'icomoon';
+    color: $bg-grey;
+    font-size: 20px;
+}
+
+.box__img{
+    img{
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.products__slider{
+    text-align: center;
+}

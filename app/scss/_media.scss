@@ -48,45 +48,48 @@
     }
 }
 
-@media(max-width: 530px){
-    .user-in.active, .basket-menu, .header__btn-red-logout--off{
+@media (max-width: 530px) {
+    .user-in.active,
+    .basket-menu,
+    .header__btn-red-logout--off {
         display: none;
-        .user-in__info, .balance{
+        .user-in__info,
+        .balance {
             display: none;
         }
     }
-    .user-in.active{
+    .user-in.active {
         max-width: 60px !important;
         margin-right: 5px;
         z-index: 999;
-        .droplist{
+        .droplist {
             min-width: 158px;
             position: absolute;
             z-index: 999;
         }
     }
-    .header__interact{
+    .header__interact {
         display: flex;
         justify-content: start;
         transform: translateX(200%);
     }
 
-    .header__interact.--active{
+    .header__interact.--active {
         transition: all 0.5s;
         transform: translateX(0%);
         left: 6;
         position: absolute;
     }
 
-    .user-basket-btn-media{
+    .user-basket-btn-media {
         width: 91px;
         height: 92px;
         background-color: $bg-grey;
         position: absolute;
         right: 0;
-        z-index: 999;   
+        z-index: 999;
     }
-    .user-basket-btn-media::before{
+    .user-basket-btn-media::before {
         content: "\e971";
         font-family: "icomoon";
         font-size: 40px;
@@ -97,26 +100,134 @@
         transform: translate(50%, -50%);
     }
 
-    .header_top__logo.--active{
+    .header_top__logo.--active {
         transition: all 0.4s;
         transform: translateX(-150%);
     }
 
-    .basket-menu{
-        &__dropdown-menu{
+    .basket-menu {
+        &__dropdown-menu {
             left: 0;
         }
     }
 }
 
 @media (max-width: 797px) {
+.tutorial{
+    margin-bottom: 60px;
+    &__tittle{
+        font-size: 22px !important;
+        line-height: 30px !important;
+    }
+}
+
+    .authors .authors__item {
+        max-width: 300px;
+        width: 100%;
+        height: 120px;
+        .authors__tittle {
+            font-size: 18px;
+            line-height: 19px;
+            text-align: left;
+            margin-left: 10px;
+        }
+    }
+
+    .authors .authors__item .authors_btn {
+        margin-left: 20px;
+        button{
+            padding: 10px 15px;
+            a {
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+    }
+
+    .slick-dots {
+        button {
+            width: 8px;
+            height: 14px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .why_us {
+        margin-top: 20px;
+        &__tittle {
+            font-size: 24px !important;
+            font-weight: 500 !important;
+            padding: 60px 0 20px 0 !important;
+        }
+        &__items {
+            padding: 0 !important;
+            display: block !important;
+            width: 100% !important;
+        }
+        &__item {
+            padding: 20px 0;
+        }
+    }
+
+    .search {
+        .search-inner {
+            padding-top: 60px;
+            &__tittle {
+                font-size: 40px !important;
+            }
+            &__text {
+                font-size: 18px !important;
+                line-height: 20px !important;
+            }
+        }
+    }
+    .products {
+        &__tittle {
+            font-size: 27px !important;
+            line-height: 36px !important;
+            font-weight: 500 !important;
+            margin-top: 60px !important;
+        }
+        &__category-btn {
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+        &__btn {
+            margin: 40px 0 !important;
+        }
+        .item,
+        .item__img {
+            margin: 0 auto !important;
+        }
+    }
+    // slick slider is floated element -_-
+    .slick-slide {
+        text-align: center;
+    }
+
     .menu__list {
         display: none;
         li {
             display: block;
         }
     }
-    .basket-menu__dropdown-menu{
+    .user-in.active {
+        z-index: 999;
+        .droplist {
+            min-width: 158px;
+            position: absolute;
+            z-index: 999;
+        }
+    }
+    .basket-menu__dropdown-menu {
         z-index: 999;
         position: absolute;
     }
@@ -133,12 +244,12 @@
         font-weight: 100;
         color: #fff;
         position: absolute;
-        right: 50%;
+        right: 10%;
         transform: translateX(50%);
         top: 105px;
     }
-    .header__menu{
-        .menu__list{
+    .header__menu {
+        .menu__list {
             position: absolute;
             border: 1px solid #cccccc;
             background-color: $bg-grey;
@@ -149,7 +260,7 @@
             transform: translateX(50%);
             height: auto;
             top: -500px;
-            &.--active{
+            &.--active {
                 transition: all 0.5s;
                 top: 151px;
                 position: absolute;
