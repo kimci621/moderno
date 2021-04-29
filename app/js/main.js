@@ -1,27 +1,14 @@
 $(function () {
-    $('.menu-burger').on('click', function(){
-        $('.menu__list').slideToggle(); //drop from jq
-    });
-
-    $('.user-basket-btn-media').on('click', function(){
-        $('.header_top__logo,.user-in.active, .basket-menu, .header__btn-red-in.header__btn-red-logout--off').slideToggle(); //drop from jq
-        $('.header__interact').toggleClass('--active');
-        $('.header_top__logo').toggleClass('--active');
-    });
-
-    $('.menu-burger').on('click', function(){
-        $('.menu__list').toggleClass('--active');
-    });
-    
-    if(window.matchMedia('(max-width: 1163px)').matches){
-        $(".tutorial_content").slick({
-            arrows: true,
-            dots: false,
+    $(function () {
+        $(".products__slider").slick({
+            arrows: false,
+            dots: true,
             infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 3,
         });
-    };
-
-    if(window.matchMedia('(max-width: 1000px)').matches){
+    });
+    if (window.matchMedia('(max-width: 1000px)').matches) {
         $(".products__slider").slick({
             arrows: false,
             dots: true,
@@ -30,18 +17,7 @@ $(function () {
             slidesToScroll: 1,
         });
     };
-
-    if(window.matchMedia('(min-width: 1879px)').matches){
-        $(".products__slider").slick({
-            arrows: false,
-            dots: true,
-            infinite: false,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-        });
-    };
-
-    if(window.matchMedia('(max-width: 1450px)').matches){
+    if (window.matchMedia('(max-width: 1450px)').matches) {
         $(".products__slider").slick({
             arrows: false,
             dots: true,
@@ -52,6 +28,21 @@ $(function () {
     };
 
 
+
+    $('.menu-burger').on('click', function () {
+        $('.menu__list').slideToggle(); //drop from jq
+    });
+
+    $('.user-basket-btn-media').on('click', function () {
+        $('.header_top__logo,.user-in.active, .basket-menu, .header__btn-red-in.header__btn-red-logout--off').slideToggle(); //drop from jq
+        $('.header__interact').toggleClass('--active');
+        $('.header_top__logo').toggleClass('--active');
+    });
+
+    $('.menu-burger').on('click', function () {
+        $('.menu__list').toggleClass('--active');
+    });
+
     $(function () {
         $(".rateyo").rateYo({
             rating: 5,
@@ -60,6 +51,6 @@ $(function () {
             halfStar: true,
         });
     });
-    
+
     var mixer = mixitup('.products');
 });

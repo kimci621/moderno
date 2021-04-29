@@ -39,6 +39,11 @@
     .header_top__text {
         display: none;
     }
+    .products__items{
+        justify-content: center !important;
+        flex-direction: column !important;
+        align-items: center;
+    }
 }
 
 @media (max-width: 680px) {
@@ -112,14 +117,14 @@
     }
 }
 
-@media (max-width: 797px) {
-.tutorial{
-    margin-bottom: 60px;
-    &__tittle{
-        font-size: 22px !important;
-        line-height: 30px !important;
+@media (max-width: 797px) {  
+    .tutorial {
+        margin-bottom: 60px;
+        &__tittle {
+            font-size: 22px !important;
+            line-height: 30px !important;
+        }
     }
-}
 
     .authors .authors__item {
         max-width: 300px;
@@ -135,7 +140,7 @@
 
     .authors .authors__item .authors_btn {
         margin-left: 20px;
-        button{
+        button {
             padding: 10px 15px;
             a {
                 font-size: 13px;
@@ -199,13 +204,17 @@
             flex-direction: column;
             flex-wrap: nowrap;
             justify-content: center;
+            align-items: center;
+            // .item__img{
+            //     margin-bottom: 20px !important;
+            // }
         }
         &__btn {
             margin: 40px 0 !important;
         }
         .item,
         .item__img {
-            margin: 0 auto !important;
+            margin: 0 auto;
         }
     }
     // slick slider is floated element -_-
@@ -288,5 +297,17 @@
 @media (min-width: 797px) {
     .menu__list {
         display: block !important;
+    }
+}
+
+@media(max-width: 1160px){
+    .tutorial_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .box__tittle{
+            padding-bottom: 30px;
+        }
     }
 }
