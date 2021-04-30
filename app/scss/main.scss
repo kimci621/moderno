@@ -27,13 +27,7 @@
     justify-content: center;
     position: relative;
 
-    // <---------- активация почты, оповещений, user info( а так же их отключение) ------------>
-    // .active {
-    //     display: none !important;
-    // }
-
     .header__btn-green {
-        display: none;
         padding: 10px;
         width: 75px;
         border-radius: 4px;
@@ -44,13 +38,6 @@
     .header__btn-green:hover {
         color: $color-text;
         transition: 0.3s;
-    }
-    // кнопка green (register)
-    .header__btn-green {
-        // display: block !important;
-        &.header__btn-green--while-logout-on {
-            display: none !important;
-        }
     }
     .header__btn-red {
         margin-left: 8px !important;
@@ -66,13 +53,6 @@
         color: $color-text;
         transition: 0.3s;
     }
-    // кнопка red (login)
-    .header__btn-red {
-        // display: block !important;
-        &.header__btn-red--while-logout-on {
-            display: none !important;
-        }
-    }
     .header__btn-red-in {
         margin-left: 8px !important;
         padding: 10px;
@@ -86,14 +66,6 @@
         color: $color-text;
         transition: 0.3s;
     }
-    // кнопка red (logout)
-    .header__btn-red-logout {
-        display: block !important;
-        // &.header__btn-red-logout--off {
-        // display: none !important;
-        // }
-    }
-    // header icons (3)
     .circle-header {
         width: 34px;
         height: 34px;
@@ -752,7 +724,8 @@
         width: 100%;
         margin: 0 0 35px;
         .item__img {
-            min-height: 250px;
+            height: 250px;
+            min-height: 200px;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -1204,5 +1177,145 @@
 }
 
 // end product-page
+
+/* popup login window style */
+
+.animated-modal {
+    max-width: 730px;
+    width: 100%;
+    max-height: 484px;
+    background-color: #8bc34a;
+    border-radius: 4px;
+    overflow: hidden;
+    transform: translateY(-50px);
+    transition: all 0.7s;
+    display: flex;
+    justify-content: center;
+    &__tittle {
+        font-size: 48px;
+        line-height: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .name,
+    .password {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 370px;
+        input {
+            padding-left: 41px;
+            padding-right: 20px;
+            border: none;
+            max-width: 370px;
+            width: 100%;
+
+            height: 43px;
+            background-color: #76ae36;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #fff;
+            -webkit-text-fill-color: #fff;
+        }
+    }
+    ::before {
+        position: absolute;
+        font-family: "icomoon";
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 43px;
+        left: 13px;
+    }
+    .name::before {
+        content: "\e971";
+    }
+    .password::before {
+        content: "\e914";
+    }
+    .name {
+        margin-bottom: 8px;
+    }
+    .password {
+        margin-bottom: 19px;
+    }
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 370px;
+        button,
+        button:active,
+        button:focus {
+            height: 50px;
+            background-color: #76ae36;
+            border: none;
+            a {
+                font-size: 14px;
+                line-height: 50px;
+                font-weight: 700;
+                color: #fff;
+                p{
+                    display: none;
+                }
+            }
+        }
+        .submit {
+            padding: 0 44px;
+        }
+        .create {
+            position: relative;
+            padding: 0 44px;
+            overflow: hidden;
+            a {
+                padding-left: 30px;
+            }
+            margin-bottom: 27px;
+        }
+        .create::before {
+            font-family: "icomoon";
+            content: "\e907";
+            font-size: 18px;
+            color: #fff;
+            line-height: 50px;
+            font-weight: 400;
+            left: 36px;
+            position: absolute;
+        }
+        button:hover {
+            background-color: #fff;
+            transition: all 0.3s;
+            a, .create::before {
+                color: #000;
+            }
+        }
+    }
+    &__lost-pas {
+        text-align: center;
+        a {
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #fff;
+        }
+        a:hover {
+            transition: 0.5s all;
+            color: #000;
+            border-bottom: 1px solid #000;
+        }
+    }
+}
+
+//  slide animation
+.fancybox-slide--current .animated-modal {
+    transform: translateY(0);
+    opacity: 1;
+}
 
 @import "media";

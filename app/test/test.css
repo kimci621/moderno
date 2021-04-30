@@ -1,4 +1,4 @@
-.black_box{
+/* .black_box{
     max-width: 300px;
     min-height: 300px;
     margin: 0 auto;
@@ -15,4 +15,11 @@
     margin: 0;
     position: absolute;
     top: 0;
+} */
+
+#hidden-content{
+    display: none;
+    background-color: red;
+    height: 600px;
+    text-align: center;
 }

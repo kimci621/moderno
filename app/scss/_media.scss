@@ -35,11 +35,70 @@
     }
 }
 
+@media (max-width: 405px) {
+    .tutorial .tutorial_content .tutorial__item .box__img {
+        img {
+            width: 290px !important;
+        }
+    }
+
+    .products {
+        &__items {
+            .item {
+                &__img {
+                    height: 200px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 471px) {
+    .animated-modal{
+        .create{
+            a{
+                padding: 0;
+            }
+        }
+        .create::before{
+            display: none;
+        }
+        &__btns{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin: 0 auto;
+                max-width: 250px;
+            .submit, .create{
+                margin: 0;
+            }
+            .submit{
+                margin-bottom: 10px;
+            }
+            button{
+                max-width: 250px
+            }
+        }
+        &__lost-pas{
+            margin-top: 20px;
+        }
+    }
+    .name,
+    .password{
+        width: 250px !important;
+    }
+}
+@media(max-width: 350px){
+    #animatedModal{
+        padding: 20px
+    }
+}
+
 @media (max-width: 1000px) {
     .header_top__text {
         display: none;
     }
-    .products__items{
+    .products__items {
         justify-content: center !important;
         flex-direction: column !important;
         align-items: center;
@@ -56,7 +115,9 @@
 @media (max-width: 530px) {
     .user-in.active,
     .basket-menu,
-    .header__btn-red-logout--off {
+    .logout,
+    .header__btn-green,
+    .header__btn-red {
         display: none;
         .user-in__info,
         .balance {
@@ -117,7 +178,7 @@
     }
 }
 
-@media (max-width: 797px) {  
+@media (max-width: 797px) {
     .tutorial {
         margin-bottom: 60px;
         &__tittle {
@@ -300,13 +361,13 @@
     }
 }
 
-@media(max-width: 1160px){
-    .tutorial_content{
+@media (max-width: 1160px) {
+    .tutorial_content {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        .box__tittle{
+        .box__tittle {
             padding-bottom: 30px;
         }
     }

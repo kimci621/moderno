@@ -144,3 +144,11 @@ body .container-fluid {
     text-align: center;
 }
 
+// <---------- активация user info( а так же их отключение) ------------>
+    .active {
+        display: none !important;
+    }
+//if active is commented and deactive is not, we have registration page
+    // .deactive{
+    //     display: none !important;
+    // }
