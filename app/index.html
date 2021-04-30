@@ -2,526 +2,542 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MODERNO - market place</title>
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    <link  href="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MODERNO - market place</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link href="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="libs/nouislider.css">
 </head>
 
 <body>
-    <header>
-        <div class="header_top">
-            <div class="container">
-                <div class="header_top-inner">
-                    <div class="user-basket-btn-media"></div>
-                    <div class="header_top__logo">
-                        <a href="#">
-                            <img src="img/logo.png" alt="no image">
-                        </a>
-                    </div>
-                    <div class="header_top__text">
-                        <a href="#">
-                            <span>Need help?</span>
-                        </a>
-                        Talk to expert:
-                        <a href="tel:61383766284">
-                            +61 3 8376 6284
-                        </a>
-                    </div>
-                    <!-- 
+  <header>
+    <div class="header_top">
+      <div class="container">
+        <div class="header_top-inner">
+          <div class="user-basket-btn-media"></div>
+          <div class="header_top__logo">
+            <a href="#">
+              <img src="img/logo.png" alt="no image">
+            </a>
+          </div>
+          <div class="header_top__text">
+            <a href="#">
+              <span>Need help?</span>
+            </a>
+            Talk to expert:
+            <a href="tel:61383766284">
+              +61 3 8376 6284
+            </a>
+          </div>
+          <!-- 
                        user interactive case 
                      -->
-                    <div class="header__interact">
-                        <div class="notification-menu">
-                            <a href="#" class="notification circle-header active icon-notifications-outline">
-                                <span>8</span>
-                                <div class="fix"></div>
-                            </a>
-                            <div class="notification-menu__massages-dropdown">
-                                <div class="notification-menu__massages-dropdown--case">
-                                    <div class="avatar">
-                                        <img src="img/girl_ico.png" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <div class="type">
-                                            <a href="#">Need WP Help!</a>
-                                        </div>
-                                        <div class="date">
-                                            01 Dec, 2016
-                                        </div>
-                                    </div>
-                                    <div class="ico">
-                                        <a class="simple" href="#"></a>
-                                    </div>
-                                </div>
-                                <div class="notification-menu__massages-dropdown--case">
-                                    <div class="avatar">
-                                        <img src="img/beardy_ico.png" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <div class="type">
-                                            <a href="#">Need WP Help!</a>
-                                        </div>
-                                        <div class="date">
-                                            26 Nov, 2016
-                                        </div>
-                                    </div>
-                                    <div class="ico">
-                                        <a class="tomato" href="#"></a>
-                                    </div>
-                                </div>
-                                <div class="notification-menu__massages-dropdown--case">
-                                    <div class="avatar">
-                                        <img src="img/redhead_ico.png" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <div class="type">
-                                            <a href="#">Psd Help!</a>
-                                        </div>
-                                        <div class="date">
-                                            26 Nov, 2016
-                                        </div>
-                                    </div>
-                                    <div class="ico">
-                                        <a class="resend" href="#"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="massage-menu">
-                            <a href="#" class="massage circle-header active icon-envelop">
-                                <span>5</span>
-                                <div class="fix"></div>
-                            </a>
-                            <div class="massage-menu__massages-dropdown">
-                                <div class="massage-menu__massages-dropdown--case">
-                                    <div class="avatar">
-                                        <img src="img/girl_ico.png" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">
-                                            <a href="#">Kazi Fahim</a>
-                                        </div>
-                                        <div class="type">
-                                            Need WP Help!
-                                        </div>
-                                        <div class="date">
-                                            01 Dec, 2016
-                                        </div>
-                                    </div>
-                                    <div class="ico">
-                                        <a class="simple" href="#"></a>
-                                    </div>
-                                </div>
-                                <div class="massage-menu__massages-dropdown--case">
-                                    <div class="avatar">
-                                        <img src="img/beardy_ico.png" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">
-                                            <a href="#">Richi Lenal</a>
-                                        </div>
-                                        <div class="type">
-                                            Need WP Help!
-                                        </div>
-                                        <div class="date">
-                                            26 Nov, 2016
-                                        </div>
-                                    </div>
-                                    <div class="ico">
-                                        <a class="tomato" href="#"></a>
-                                    </div>
-                                </div>
-                                <div class="massage-menu__massages-dropdown--case">
-                                    <div class="avatar">
-                                        <img src="img/redhead_ico.png" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">
-                                            <a href="#">PsdBosS</a>
-                                        </div>
-                                        <div class="type">
-                                            Psd Help!
-                                        </div>
-                                        <div class="date">
-                                            26 Nov, 2016
-                                        </div>
-                                    </div>
-                                    <div class="ico">
-                                        <a class="resend" href="#"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="basket-menu">
-                            <a href="#" class="basket circle-header icon-cart">
-                                <span>6</span>
-                                <div class="fix"></div>
-                            </a>
-                            <div class="basket-menu__dropdown-menu">
-                                <div class="items">
-                                    <div class="items__purchase">
-                                        <div class="items__purchase--img">
-                                            <img src="img/basket-git.jpg" alt="">
-                                        </div>
-                                        <div class="items__purchase--info">
-                                            <div class="name">Grand Ballet</div>
-                                            <div class="type">WordPress</div>
-                                            <div class="price">$59</div>
-                                        </div>
-                                    </div>
-                                    <div class="items__purchase">
-                                        <div class="items__purchase--img">
-                                            <img src="img/basket-tg.jpg" alt="">
-                                        </div>
-                                        <div class="items__purchase--info">
-                                            <div class="name">Apple Device</div>
-                                            <div class="type">WordPress</div>
-                                            <div class="price">$59</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="items__price">
-                                    <div class="text">Total</div>
-                                    <div class="text">$118</div>
-                                </div>
-                                <div class="items__btn">
-                                    <a class="btn green" href="#">Go to Cart</a>
-                                    <a class="btn red" href="#">Go to Checkout</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="user-in active">
-                            <div class="user-in__avatar">
-                                <a href="#"><img src="img/user_in.jpg" alt=""></a>
-                            </div>
-                            <div class="user-in__info">
-                                <a href="#" class="name">
-                                    Mike Hussy
-                                </a>
-                                <div href="#" class="balance">
-                                    $171.00
-                                </div>
-                            </div>
-                            <div class="droplist">
-                                <ul>
-                                    <li><a href="#">Profile Page</a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li><a href="#">Account Setting</a></li>
-                                    <li><a href="#">Downloads</a></li>
-                                    <li><a href="#">Wishlist</a></li>
-                                    <li><a href="#">Upload Item</a></li>
-                                    <li><a href="#">Statement</a></li>
-                                    <li><a href="#">Withdraws</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="header__btn-green deactive">Login</a>
-                        <a href="#" class="header__btn-red deactive">Register</a>
-                        <a href="#" class="header__btn-red-in logout active">Logout</a>
-                        <!-- popup login window -->
-                        <div style="display: none;" id="animatedModal" class="animated-modal">
-                            <div class="animated-modal__tittle">LOGIN</div>
-                            <label class="name" for="animated-modal"><input type="text" placeholder="Name"></label>
-                            <label class="password" for="animated-modal"><input type="text" placeholder="Password"></label>
-                            <div class="animated-modal__btns">
-                                <button class="submit"><a href="#">SUBMIT</a></button>
-                                <button class="create"><a href="#">Create?</a></button>
-                            </div>
-                            <div class="animated-modal__lost-pas"><a href="#">Lost Password?</a></div>
-                          </div>
+          <div class="header__interact">
+            <div class="notification-menu">
+              <a href="#" class="notification circle-header active icon-notifications-outline">
+                <span>8</span>
+                <div class="fix"></div>
+              </a>
+              <div class="notification-menu__massages-dropdown">
+                <div class="notification-menu__massages-dropdown--case">
+                  <div class="avatar">
+                    <img src="img/girl_ico.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="type">
+                      <a href="#">Need WP Help!</a>
                     </div>
+                    <div class="date">
+                      01 Dec, 2016
+                    </div>
+                  </div>
+                  <div class="ico">
+                    <a class="simple" href="#"></a>
+                  </div>
                 </div>
+                <div class="notification-menu__massages-dropdown--case">
+                  <div class="avatar">
+                    <img src="img/beardy_ico.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="type">
+                      <a href="#">Need WP Help!</a>
+                    </div>
+                    <div class="date">
+                      26 Nov, 2016
+                    </div>
+                  </div>
+                  <div class="ico">
+                    <a class="tomato" href="#"></a>
+                  </div>
+                </div>
+                <div class="notification-menu__massages-dropdown--case">
+                  <div class="avatar">
+                    <img src="img/redhead_ico.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="type">
+                      <a href="#">Psd Help!</a>
+                    </div>
+                    <div class="date">
+                      26 Nov, 2016
+                    </div>
+                  </div>
+                  <div class="ico">
+                    <a class="resend" href="#"></a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="massage-menu">
+              <a href="#" class="massage circle-header active icon-envelop">
+                <span>5</span>
+                <div class="fix"></div>
+              </a>
+              <div class="massage-menu__massages-dropdown">
+                <div class="massage-menu__massages-dropdown--case">
+                  <div class="avatar">
+                    <img src="img/girl_ico.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="name">
+                      <a href="#">Kazi Fahim</a>
+                    </div>
+                    <div class="type">
+                      Need WP Help!
+                    </div>
+                    <div class="date">
+                      01 Dec, 2016
+                    </div>
+                  </div>
+                  <div class="ico">
+                    <a class="simple" href="#"></a>
+                  </div>
+                </div>
+                <div class="massage-menu__massages-dropdown--case">
+                  <div class="avatar">
+                    <img src="img/beardy_ico.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="name">
+                      <a href="#">Richi Lenal</a>
+                    </div>
+                    <div class="type">
+                      Need WP Help!
+                    </div>
+                    <div class="date">
+                      26 Nov, 2016
+                    </div>
+                  </div>
+                  <div class="ico">
+                    <a class="tomato" href="#"></a>
+                  </div>
+                </div>
+                <div class="massage-menu__massages-dropdown--case">
+                  <div class="avatar">
+                    <img src="img/redhead_ico.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="name">
+                      <a href="#">PsdBosS</a>
+                    </div>
+                    <div class="type">
+                      Psd Help!
+                    </div>
+                    <div class="date">
+                      26 Nov, 2016
+                    </div>
+                  </div>
+                  <div class="ico">
+                    <a class="resend" href="#"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="basket-menu">
+              <a href="#" class="basket circle-header icon-cart">
+                <span>6</span>
+                <div class="fix"></div>
+              </a>
+              <div class="basket-menu__dropdown-menu">
+                <div class="items">
+                  <div class="items__purchase">
+                    <div class="items__purchase--img">
+                      <img src="img/basket-git.jpg" alt="">
+                    </div>
+                    <div class="items__purchase--info">
+                      <div class="name">Grand Ballet</div>
+                      <div class="type">WordPress</div>
+                      <div class="price">$59</div>
+                    </div>
+                  </div>
+                  <div class="items__purchase">
+                    <div class="items__purchase--img">
+                      <img src="img/basket-tg.jpg" alt="">
+                    </div>
+                    <div class="items__purchase--info">
+                      <div class="name">Apple Device</div>
+                      <div class="type">WordPress</div>
+                      <div class="price">$59</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="items__price">
+                  <div class="text">Total</div>
+                  <div class="text">$118</div>
+                </div>
+                <div class="items__btn">
+                  <a class="btn green" href="#">Go to Cart</a>
+                  <a class="btn red" href="#">Go to Checkout</a>
+                </div>
+              </div>
+            </div>
+            <div class="user-in active">
+              <div class="user-in__avatar">
+                <a href="#"><img src="img/user_in.jpg" alt=""></a>
+              </div>
+              <div class="user-in__info">
+                <a href="#" class="name">
+                  Mike Hussy
+                </a>
+                <div href="#" class="balance">
+                  $171.00
+                </div>
+              </div>
+              <div class="droplist">
+                <ul>
+                  <li><a href="#">Profile Page</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Account Setting</a></li>
+                  <li><a href="#">Downloads</a></li>
+                  <li><a href="#">Wishlist</a></li>
+                  <li><a href="#">Upload Item</a></li>
+                  <li><a href="#">Statement</a></li>
+                  <li><a href="#">Withdraws</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;"
+              class="header__btn-green deactive">Login</a>
+            <a data-fancybox data-animation-duration="700" data-src="#animatedModalReg" href="javascript:;"
+              class="header__btn-red deactive">Register</a>
+            <a href="#" class="header__btn-red-in logout active">Logout</a>
+
+            <!-- popup login window -->
+            <div style="display: none;" id="animatedModal" class="animated-modal">
+              <div class="animated-modal__tittle">LOGIN</div>
+              <label class="name" for="animated-modal"><input type="text" placeholder="Name"></label>
+              <label class="password" for="animated-modal"><input type="text" placeholder="Password"></label>
+              <div class="animated-modal__btns">
+                <button class="submit"><a href="#">SUBMIT</a></button>
+                <button class="create"><a href="#">Create?</a></button>
+              </div>
+              <div class="animated-modal__lost-pas"><a href="#">Lost Password?</a></div>
+            </div>
+
+            <!-- pupop registration -->
+            <!-- <div style="display: none;" id="animatedModalReg" class="animated-modal">
+              <div class="animated-modal__tittle">LOGIN</div>
+              <label class="name" for="animated-modal"><input type="text" placeholder="Name"></label>
+              <label class="password" for="animated-modal"><input type="text" placeholder="Password"></label>
+              <div class="animated-modal__btns">
+                <button class="submit"><a href="#">SUBMIT</a></button>
+                <button class="create"><a href="#">Create?</a></button>
+              </div>
+              <div class="animated-modal__lost-pas"><a href="#">Lost Password?</a></div>
+            </div> -->
+          </div>
         </div>
-        <!-- 
+      </div>
+    </div>
+    <!-- 
             navigation menu
          -->
-        <div class="header__menu">
-            <div class="container">
-                <ul class="menu__list">
-                    <div>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">WordPress</a></li>
-                        <li><a href="#">Joomla</a></li>
-                        <li><a href="#">PSD</a></li>
-                        <li><a href="#">Plugins</a></li>
-                        <li><a href="#">Components</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Help</a></li>
-                    </div>
-                </ul>
-                <div class="menu-burger"></div>
-            </div>
-        </div>
-    </header>
+    <div class="header__menu">
+      <div class="container">
+        <ul class="menu__list">
+          <div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">WordPress</a></li>
+            <li><a href="#">Joomla</a></li>
+            <li><a href="#">PSD</a></li>
+            <li><a href="#">Plugins</a></li>
+            <li><a href="#">Components</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+          </div>
+        </ul>
+        <div class="menu-burger"></div>
+      </div>
+    </div>
+  </header>
 
-    <!-- end section -->
-    <!-- 
+  <!-- end section -->
+  <!-- 
     new section 'search'
     -->
-    <section class="search">
-        <div class="container">
-            <div class="search-inner">
-                <div class="search-inner__tittle">
-                    Welcome To Foxtar Market Place!
-                </div>
-                <div class="search-inner__text">
-                    Premium WordPress Themes, Web Templates and Many More ...
-                </div>
-                <div class="search-inner__form">
-                    <form>
-                        <input type="text" placeholder="Search Your Keywords . . ." required>
-                        <!--псевдоэлементы не работают с input-->
-                        <button type="submit"></button>
-                    </form>
-                </div>
-            </div>
+  <section class="search">
+    <div class="container">
+      <div class="search-inner">
+        <div class="search-inner__tittle">
+          Welcome To Foxtar Market Place!
         </div>
-    </section>
-    <!-- end section -->
-    <!-- new section 'products' -->
-    <section class="products">
-        <div class="container-fluid">
-            <div class="products__tittle">
-                Let’s Check Out Our Newest Release Prodcuts
+        <div class="search-inner__text">
+          Premium WordPress Themes, Web Templates and Many More ...
+        </div>
+        <div class="search-inner__form">
+          <form>
+            <input type="text" placeholder="Search Your Keywords . . ." required>
+            <!--псевдоэлементы не работают с input-->
+            <button type="submit"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section -->
+  <!-- new section 'products' -->
+  <section class="products">
+    <div class="container-fluid">
+      <div class="products__tittle">
+        Let’s Check Out Our Newest Release Prodcuts
+      </div>
+      <div class="products__category-btn">
+        <button type="button" data-filter="all">All</button>
+        <button type="button" data-filter=".category-wordpress">WordPress</button>
+        <button type="button" data-filter=".category-joomla">Joomla</button>
+        <button type="button" data-filter=".category-plugin">Plugins</button>
+        <button type="button" data-filter=".category-component">Component</button>
+        <button type="button" data-filter=".category-psd">PSD</button>
+      </div>
+      <div class="products__items">
+        <div class="item mix category-joomla category-component category-popular" data-order="1">
+          <div class="item__img" style='background-image: url(img/mobileapp.jpg);'>
+            <div class="popular"></div>
+          </div>
+          <div class="item__name">
+            <div class="item__text">
+              <div class="item__tittle">
+                Responsive Mobile APP
+              </div>
+              <a class="item__description" href="#">
+                Site Template
+              </a>
             </div>
-            <div class="products__category-btn">
-                <button type="button" data-filter="all">All</button>
-                <button type="button" data-filter=".category-wordpress">WordPress</button>
-                <button type="button" data-filter=".category-joomla">Joomla</button>
-                <button type="button" data-filter=".category-plugin">Plugins</button>
-                <button type="button" data-filter=".category-component">Component</button>
-                <button type="button" data-filter=".category-psd">PSD</button>
+            <div class="item__price">
+              $19
             </div>
-            <div class="products__items">
-                <div class="item mix category-joomla category-component category-popular" data-order="1">
-                    <div class="item__img" style='background-image: url(img/mobileapp.jpg);'>
-                        <div class="popular"></div>
-                    </div>
-                    <div class="item__name">
-                        <div class="item__text">
-                            <div class="item__tittle">
-                                Responsive Mobile APP
-                            </div>
-                            <a class="item__description" href="#">
-                                Site Template
-                            </a>
-                        </div>
-                        <div class="item__price">
-                            $19
-                        </div>
-                    </div>
+          </div>
 
-                    <div class="item__user">
-                        <div class="user">
-                            <a class="user__avatar"><img src="img/icons/user_avatar.png" alt="no avatar"></a>
-                            <a class="user__name" href="#">Radiustheme</a>
-                        </div>
-                        <div class="rating">
-                            <div class="rateyo"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item mix category-plugin category-worpress category-new" data-order="2">
-                    <div class="item__img" style='background-image: url(img/apple.jpg);'></div>
-                    <div class="item__name">
-                        <div class="item__text">
-                            <div class="item__tittle">
-                                The Post Grid Pro
-                            </div>
-                            <a class="item__description" href="#">
-                                WordPress Plugin
-                            </a>
-                        </div>
-                        <div class="item__price">
-                            $15
-                        </div>
-                    </div>
+          <div class="item__user">
+            <div class="user">
+              <a class="user__avatar"><img src="img/icons/user_avatar.png" alt="no avatar"></a>
+              <a class="user__name" href="#">Radiustheme</a>
+            </div>
+            <div class="rating">
+              <div class="rateyo"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item mix category-plugin category-worpress category-new" data-order="2">
+          <div class="item__img" style='background-image: url(img/apple.jpg);'></div>
+          <div class="item__name">
+            <div class="item__text">
+              <div class="item__tittle">
+                The Post Grid Pro
+              </div>
+              <a class="item__description" href="#">
+                WordPress Plugin
+              </a>
+            </div>
+            <div class="item__price">
+              $15
+            </div>
+          </div>
 
-                    <div class="item__user">
-                        <div class="user">
-                            <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                            <a class="user__name" href="#">PsdBosS</a>
-                        </div>
-                        <div class="rating">
-                            <div class="rateyo"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item mix category-plugin category-wordpress category-popular" data-order="3">
-                    <div class="item__img" style='background-image: url(img/wordpress.jpg);'>
-                        <div class="popular"></div>
-                    </div>
-                    <div class="item__name">
-                        <div class="item__text">
-                            <div class="item__tittle">
-                                Food Menu
-                            </div>
-                            <a class="item__description" href="#">
-                                WordPress Plugin
-                            </a>
-                        </div>
-                        <div class="item__price">
-                            $20
-                        </div>
-                    </div>
+          <div class="item__user">
+            <div class="user">
+              <a class="user__avatar"><img src="img/icons/" alt=""></a>
+              <a class="user__name" href="#">PsdBosS</a>
+            </div>
+            <div class="rating">
+              <div class="rateyo"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item mix category-plugin category-wordpress category-popular" data-order="3">
+          <div class="item__img" style='background-image: url(img/wordpress.jpg);'>
+            <div class="popular"></div>
+          </div>
+          <div class="item__name">
+            <div class="item__text">
+              <div class="item__tittle">
+                Food Menu
+              </div>
+              <a class="item__description" href="#">
+                WordPress Plugin
+              </a>
+            </div>
+            <div class="item__price">
+              $20
+            </div>
+          </div>
 
-                    <div class="item__user">
-                        <div class="user">
-                            <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                            <a class="user__name" href="#">Manilip</a>
-                        </div>
-                        <div class="rating">
-                            <div class="rateyo"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item mix category-plugin category-psd category-new" data-order="4">
-                    <div class="item__img" style='background-image: url(img/mockup.jpg);'></div>
-                    <div class="item__name">
-                        <div class="item__text">
-                            <div class="item__tittle">
-                                Imac Mockup
-                            </div>
-                            <a class="item__description" href="#">
-                                Psd Template
-                            </a>
-                        </div>
-                        <div class="item__price">
-                            $12
-                        </div>
-                    </div>
+          <div class="item__user">
+            <div class="user">
+              <a class="user__avatar"><img src="img/icons/" alt=""></a>
+              <a class="user__name" href="#">Manilip</a>
+            </div>
+            <div class="rating">
+              <div class="rateyo"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item mix category-plugin category-psd category-new" data-order="4">
+          <div class="item__img" style='background-image: url(img/mockup.jpg);'></div>
+          <div class="item__name">
+            <div class="item__text">
+              <div class="item__tittle">
+                Imac Mockup
+              </div>
+              <a class="item__description" href="#">
+                Psd Template
+              </a>
+            </div>
+            <div class="item__price">
+              $12
+            </div>
+          </div>
 
-                    <div class="item__user">
-                        <div class="user">
-                            <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                            <a class="user__name" href="#">Lolypop</a>
-                        </div>
-                        <div class="rating">
-                            <div class="rateyo"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item mix category-joomla category-component" data-order="5">
-                    <div class="item__img" style='background-image: url(img/daybook.jpg);'></div>
-                    <div class="item__name">
-                        <div class="item__text">
-                            <div class="item__tittle">
-                                Gymedge
-                            </div>
-                            <a class="item__description" href="#">
-                                Joomla Template
-                            </a>
-                        </div>
-                        <div class="item__price">
-                            $45
-                        </div>
-                    </div>
+          <div class="item__user">
+            <div class="user">
+              <a class="user__avatar"><img src="img/icons/" alt=""></a>
+              <a class="user__name" href="#">Lolypop</a>
+            </div>
+            <div class="rating">
+              <div class="rateyo"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item mix category-joomla category-component" data-order="5">
+          <div class="item__img" style='background-image: url(img/daybook.jpg);'></div>
+          <div class="item__name">
+            <div class="item__text">
+              <div class="item__tittle">
+                Gymedge
+              </div>
+              <a class="item__description" href="#">
+                Joomla Template
+              </a>
+            </div>
+            <div class="item__price">
+              $45
+            </div>
+          </div>
 
-                    <div class="item__user">
-                        <div class="user">
-                            <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                            <a class="user__name" href="#">Micrsof</a>
-                        </div>
-                        <div class="rating">
-                            <div class="rateyo"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item mix category-wordpress category-plugin" data-order="6">
-                    <div class="item__img" style='background-image: url(img/grid.jpg);'></div>
-                    <div class="item__name">
-                        <div class="item__text">
-                            <div class="item__tittle">
-                                The Post Grid Pro
-                            </div>
-                            <a class="item__description" href="#">
-                                WordPress Plugin
-                            </a>
-                        </div>
-                        <div class="item__price">
-                            $97
-                        </div>
-                    </div>
+          <div class="item__user">
+            <div class="user">
+              <a class="user__avatar"><img src="img/icons/" alt=""></a>
+              <a class="user__name" href="#">Micrsof</a>
+            </div>
+            <div class="rating">
+              <div class="rateyo"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item mix category-wordpress category-plugin" data-order="6">
+          <div class="item__img" style='background-image: url(img/grid.jpg);'></div>
+          <div class="item__name">
+            <div class="item__text">
+              <div class="item__tittle">
+                The Post Grid Pro
+              </div>
+              <a class="item__description" href="#">
+                WordPress Plugin
+              </a>
+            </div>
+            <div class="item__price">
+              $97
+            </div>
+          </div>
 
-                    <div class="item__user">
-                        <div class="user">
-                            <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                            <a class="user__name" href="#">Raklouse</a>
-                        </div>
-                        <div class="rating">
-                            <div class="rateyo"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item mix category-component category-psd category-popular" data-order="7">
-                    <div class="item__img" style='background-image: url(img/face.jpg);'>
-                        <div class="popular"></div>
-                    </div>
-                    <div class="item__name">
-                        <div class="item__text">
-                            <div class="item__tittle">
-                                Doll Face
-                            </div>
-                            <a class="item__description" href="#">
-                                Illsatration
-                            </a>
-                        </div>
-                        <div class="item__price">
-                            $123
-                        </div>
-                    </div>
+          <div class="item__user">
+            <div class="user">
+              <a class="user__avatar"><img src="img/icons/" alt=""></a>
+              <a class="user__name" href="#">Raklouse</a>
+            </div>
+            <div class="rating">
+              <div class="rateyo"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item mix category-component category-psd category-popular" data-order="7">
+          <div class="item__img" style='background-image: url(img/face.jpg);'>
+            <div class="popular"></div>
+          </div>
+          <div class="item__name">
+            <div class="item__text">
+              <div class="item__tittle">
+                Doll Face
+              </div>
+              <a class="item__description" href="#">
+                Illsatration
+              </a>
+            </div>
+            <div class="item__price">
+              $123
+            </div>
+          </div>
 
-                    <div class="item__user">
-                        <div class="user">
-                            <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                            <a class="user__name" href="#">Mikc Art</a>
-                        </div>
-                        <div class="rating">
-                            <div class="rateyo"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item  mix category-component category-psd category-new" data-order="8">
-                    <div class="item__img" style='background-image: url(img/some_design.jpg);'></div>
-                    <div class="item__name">
-                        <div class="item__text">
-                            <div class="item__tittle">
-                                Designer Mockup
-                            </div>
-                            <a class="item__description" href="#">
-                                PsdTemplate
-                            </a>
-                        </div>
-                        <div class="item__price">
-                            $7
-                        </div>
-                    </div>
+          <div class="item__user">
+            <div class="user">
+              <a class="user__avatar"><img src="img/icons/" alt=""></a>
+              <a class="user__name" href="#">Mikc Art</a>
+            </div>
+            <div class="rating">
+              <div class="rateyo"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item  mix category-component category-psd category-new" data-order="8">
+          <div class="item__img" style='background-image: url(img/some_design.jpg);'></div>
+          <div class="item__name">
+            <div class="item__text">
+              <div class="item__tittle">
+                Designer Mockup
+              </div>
+              <a class="item__description" href="#">
+                PsdTemplate
+              </a>
+            </div>
+            <div class="item__price">
+              $7
+            </div>
+          </div>
 
-                    <div class="item__user">
-                        <div class="user">
-                            <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                            <a class="user__name" href="#">ThemeLol</a>
-                        </div>
-                        <div class="rating">
-                            <div class="rateyo"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="item  mix category-component category-psd category-new" data-order="9">
+          <div class="item__user">
+            <div class="user">
+              <a class="user__avatar"><img src="img/icons/" alt=""></a>
+              <a class="user__name" href="#">ThemeLol</a>
+            </div>
+            <div class="rating">
+              <div class="rateyo"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="item  mix category-component category-psd category-new" data-order="9">
                     <div class="item__img" style='background-image: url(img/apple.jpg);'></div>
                     <div class="item__name">
                         <div class="item__text">
@@ -547,667 +563,669 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <div class="products__btn">
-            <button type="button" data-filter=".category-new">All New Items</button>
-            <button type="button" data-filter=".category-popular">Popular Items</button>
-        </div>
-    </section>
-    <!-- end section -->
-    <!-- 
+    <div class="products__btn">
+      <button type="button" data-filter=".category-new">All New Items</button>
+      <button type="button" data-filter=".category-popular">Popular Items</button>
+    </div>
+  </section>
+  <!-- end section -->
+  <!-- 
     new section 'slider'
  -->
-    <section class="container-fluid">
-        <div class="product-slider__tittle">
-            This Week Trending Products
+  <section class="container-fluid">
+    <div class="product-slider__tittle">
+      This Week Trending Products
+    </div>
+    <div class="products__slider">
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/wordpress.jpg);'>
+          <div class="popular"></div>
         </div>
-        <div class="products__slider">
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/wordpress.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Responsive Template
-                        </div>
-                        <a class="item__description" href="#">
-                            Site Template
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $19.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">Radiustheme</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Responsive Template
             </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/telegramm.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            The Post Grid Pro
-                        </div>
-                        <a class="item__description" href="#">
-                            WordPress Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $15
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">PsdBosS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/explorer.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Logo Showcae
-                        </div>
-                        <a class="item__description" href="#">
-                            Joomla Cmponent
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $21.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">Manilip</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/github.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            UI Design
-                        </div>
-                        <a class="item__description" href="#">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $12.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">Lolypop</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/apple.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Awesome peoples
-                        </div>
-                        <a class="item__description" href="#">
-                            Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $99.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">SkyangelS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/apple.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Awesome peoples
-                        </div>
-                        <a class="item__description" href="#">
-                            Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $99.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">SkyangelS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/apple.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Awesome peoples
-                        </div>
-                        <a class="item__description" href="#">
-                            Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $99.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">SkyangelS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/apple.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Awesome peoples
-                        </div>
-                        <a class="item__description" href="#">
-                            Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $99.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">SkyangelS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/apple.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Awesome peoples
-                        </div>
-                        <a class="item__description" href="#">
-                            Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $99.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">SkyangelS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/apple.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Awesome peoples
-                        </div>
-                        <a class="item__description" href="#">
-                            Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $99.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">SkyangelS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/apple.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Awesome peoples
-                        </div>
-                        <a class="item__description" href="#">
-                            Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $99.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">SkyangelS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/apple.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Awesome peoples
-                        </div>
-                        <a class="item__description" href="#">
-                            Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $99.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">SkyangelS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/apple.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Awesome peoples
-                        </div>
-                        <a class="item__description" href="#">
-                            Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $99.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">SkyangelS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/apple.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Awesome peoples
-                        </div>
-                        <a class="item__description" href="#">
-                            Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $99.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">SkyangelS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/apple.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Awesome peoples
-                        </div>
-                        <a class="item__description" href="#">
-                            Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $99.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">SkyangelS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item__img" style='background-image: url(img/apple.jpg);'>
-                    <div class="popular"></div>
-                </div>
-                <div class="item__name">
-                    <div class="item__text">
-                        <div class="item__tittle">
-                            Awesome peoples
-                        </div>
-                        <a class="item__description" href="#">
-                            Plugin
-                        </a>
-                    </div>
-                    <div class="item__price">
-                        $99.99
-                    </div>
-                </div>
-
-                <div class="item__user">
-                    <div class="user">
-                        <a class="user__avatar"><img src="img/icons/" alt=""></a>
-                        <a class="user__name" href="#">SkyangelS</a>
-                    </div>
-                    <div class="rating">
-                        <div class="rateyo"></div>
-                    </div>
-                </div>
-            </div>
+            <a class="item__description" href="#">
+              Site Template
+            </a>
+          </div>
+          <div class="item__price">
+            $19.99
+          </div>
         </div>
-    </section>
-    <!-- end section -->
 
-    <!-- new section 'why us' -->
-    <section class="why_us">
-        <div class="why_us__tittle">
-            Why You Choose Foxtar Market Place?
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">Radiustheme</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
         </div>
-        <div class="why_us__items">
-            <div class="why_us__item">
-                <div class="item__icon">
-                    <img src="img/lock.png" alt="no img">
-                </div>
-                <div class="item__tittle">
-                    Easily Buy & Sell
-                </div>
-                <div class="item__text">
-                    Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the
-                    industry's standaum.
-                </div>
-            </div>
-            <div class="why_us__item">
-                <div class="item__icon-2">
-                    <img src="img/gift.png" alt="no img">
-                </div>
-                <div class="item__tittle-2">
-                    Quality Products
-                </div>
-                <div class="item__text">
-                    Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the
-                    industry's standaum.
-                </div>
-            </div>
-            <div class="why_us__item">
-                <div class="item__icon">
-                    <img src="img/heart.png" alt="no img">
-                </div>
-                <div class="item__tittle">
-                    100% Secure Payment
-                </div>
-                <div class="item__text">
-                    Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the
-                    industry's standaum.
-                </div>
-            </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/telegramm.jpg);'>
+          <div class="popular"></div>
         </div>
-    </section>
-    <!-- end section -->
-    <!-- new section authors -->
-    <section class="authors" style='background-image: url(img/authors_bg.jpg);'>
-        <div class="authors__item">
-            <div class="authors__tittle">
-                Over <span>20,000</span> Author <br>
-                Are Involved Here!
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              The Post Grid Pro
             </div>
-            <div class="authors_btn">
-                <button><a href="#">Become A Author</a></button>
+            <a class="item__description" href="#">
+              WordPress Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $15
+          </div>
+        </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">PsdBosS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/explorer.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Logo Showcae
             </div>
+            <a class="item__description" href="#">
+              Joomla Cmponent
+            </a>
+          </div>
+          <div class="item__price">
+            $21.99
+          </div>
         </div>
-    </section>
-    <!-- end section -->
-    <!-- new section triple case (not usable) -->
-    <section>
-        <div class="container">
-            <div class="tutorial">
-                <div class="tutorial__tittle">
-                    Free Monthly Tutorials To Help You With Your Project
-                </div>
-                <div class="tutorial_content">
-                    <div class="tutorial__item">
-                        <div class="box__img">
-                            <img src="img/webdesign.jpg" alt="">
-                        </div>
-                        <div class="box__tittle">
-                            Web Design Tutorials
-                        </div>
-                    </div>
-                    <div class="tutorial__item">
-                        <div class="box__img">
-                            <img src="img/wp_tutorial.jpg" alt="">
-                        </div>
-                        <div class="box__tittle">
-                            WordPress Tutorials
-                        </div>
-                    </div>
-                    <div class="tutorial__item">
-                        <div class="box__img">
-                            <img src="img/html_tutorial.jpg" alt="">
-                        </div>
-                        <div class="box__tittle">
-                            HTML & CSS Tutorials
-                        </div>
-                    </div>
-                </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">Manilip</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/github.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              UI Design
             </div>
+            <a class="item__description" href="#">
+              Psd Template
+            </a>
+          </div>
+          <div class="item__price">
+            $12.99
+          </div>
         </div>
-    </section>
-    <!-- end section -->
-    <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="footer__blocks">
-                    <div class="blocks__item blocks__item-about">
-                        <div class="item__tittle">
-                            About Company
-                            <div class="item__tittle-hr"></div>
-                        </div>
-                        <div class="item__first-text">
-                            Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit
-                            amet urna iat.Praesent vel rutrum purus.
-                        </div>
-                        <div class="item__geo">
-                            <div class="geo-ico"></div>PO Box 16122 Collins Street West
-                            Victoria 8007 Australia
-                        </div>
-                        <div class="item__tel">
-                            <div class="tel-ico"></div>
-                            <a href="tel:61383766284">+61 3 8376 6284</a>
-                        </div>
-                    </div>
-                    <div class="blocks__item small-width">
-                        <div class="item__tittle">
-                            Join Our Community
-                            <div class="item__tittle-hr"></div>
-                        </div>
-                        <ul class="item__links">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Forums</a></li>
-                            <li><a href="#">Become an Author</a></li>
-                            <li><a href="#">Community Meetups</a></li>
-                            <li><a href="#">Become an Affiliate</a></li>
-                        </ul>
-                    </div>
-                    <div class="blocks__item small-width">
-                        <div class="item__tittle">
-                            Need Help?
-                            <div class="item__tittle-hr"></div>
-                        </div>
-                        <ul class="item__links">
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Foxtar Market Terms</a></li>
-                            <li><a href="#">Author Terms</a></li>
-                            <li><a href="#">Foxtar Licenses</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="blocks__item blocks__item-social">
-                        <div class="item__tittle">
-                            Follow Us On
-                            <div class="item__tittle-hr"></div>
-                        </div>
-                        <ul class="footer__social-sprite">
-                            <li class="bg-facebook_ico"><a href="#"></a></li>
-                            <li class="bg-linkedin_ico"><a href="#"></a></li>
-                            <li class="bg-pinterest_ico"><a href="#"></a></li>
-                            <li class="bg-twitter_ico"><a href="#"></a></li>
-                            <li class="bg-youtube_ico"><a href="#"></a></li>
-                        </ul>
-                        <div class="footer_last-text">
-                            Newsletter Sign Up!
-                        </div>
-                        <div class="footer__user-email">
-                            <input type="text" placeholder="E-mail Address">
-                        </div>
-                    </div>
-                </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">Lolypop</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/apple.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Awesome peoples
             </div>
+            <a class="item__description" href="#">
+              Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $99.99
+          </div>
         </div>
-        <!-- end content -->
-        <div class="footer__bottom">
-            © 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">SkyangelS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
         </div>
-    </footer>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
-    <script src="js/main.js"></script>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/apple.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Awesome peoples
+            </div>
+            <a class="item__description" href="#">
+              Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $99.99
+          </div>
+        </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">SkyangelS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/apple.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Awesome peoples
+            </div>
+            <a class="item__description" href="#">
+              Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $99.99
+          </div>
+        </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">SkyangelS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/apple.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Awesome peoples
+            </div>
+            <a class="item__description" href="#">
+              Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $99.99
+          </div>
+        </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">SkyangelS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/apple.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Awesome peoples
+            </div>
+            <a class="item__description" href="#">
+              Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $99.99
+          </div>
+        </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">SkyangelS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/apple.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Awesome peoples
+            </div>
+            <a class="item__description" href="#">
+              Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $99.99
+          </div>
+        </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">SkyangelS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/apple.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Awesome peoples
+            </div>
+            <a class="item__description" href="#">
+              Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $99.99
+          </div>
+        </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">SkyangelS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/apple.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Awesome peoples
+            </div>
+            <a class="item__description" href="#">
+              Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $99.99
+          </div>
+        </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">SkyangelS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/apple.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Awesome peoples
+            </div>
+            <a class="item__description" href="#">
+              Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $99.99
+          </div>
+        </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">SkyangelS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/apple.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Awesome peoples
+            </div>
+            <a class="item__description" href="#">
+              Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $99.99
+          </div>
+        </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">SkyangelS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/apple.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Awesome peoples
+            </div>
+            <a class="item__description" href="#">
+              Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $99.99
+          </div>
+        </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">SkyangelS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__img" style='background-image: url(img/apple.jpg);'>
+          <div class="popular"></div>
+        </div>
+        <div class="item__name">
+          <div class="item__text">
+            <div class="item__tittle">
+              Awesome peoples
+            </div>
+            <a class="item__description" href="#">
+              Plugin
+            </a>
+          </div>
+          <div class="item__price">
+            $99.99
+          </div>
+        </div>
+
+        <div class="item__user">
+          <div class="user">
+            <a class="user__avatar"><img src="img/icons/" alt=""></a>
+            <a class="user__name" href="#">SkyangelS</a>
+          </div>
+          <div class="rating">
+            <div class="rateyo"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section -->
+
+  <!-- new section 'why us' -->
+  <section class="why_us">
+    <div class="why_us__tittle">
+      Why You Choose Foxtar Market Place?
+    </div>
+    <div class="why_us__items">
+      <div class="why_us__item">
+        <div class="item__icon">
+          <img src="img/lock.png" alt="no img">
+        </div>
+        <div class="item__tittle">
+          Easily Buy & Sell
+        </div>
+        <div class="item__text">
+          Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the
+          industry's standaum.
+        </div>
+      </div>
+      <div class="why_us__item">
+        <div class="item__icon-2">
+          <img src="img/gift.png" alt="no img">
+        </div>
+        <div class="item__tittle-2">
+          Quality Products
+        </div>
+        <div class="item__text">
+          Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the
+          industry's standaum.
+        </div>
+      </div>
+      <div class="why_us__item">
+        <div class="item__icon">
+          <img src="img/heart.png" alt="no img">
+        </div>
+        <div class="item__tittle">
+          100% Secure Payment
+        </div>
+        <div class="item__text">
+          Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the
+          industry's standaum.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section -->
+  <!-- new section authors -->
+  <section class="authors" style='background-image: url(img/authors_bg.jpg);'>
+    <div class="authors__item">
+      <div class="authors__tittle">
+        Over <span>20,000</span> Author <br>
+        Are Involved Here!
+      </div>
+      <div class="authors_btn">
+        <button><a href="#">Become A Author</a></button>
+      </div>
+    </div>
+  </section>
+  <!-- end section -->
+  <!-- new section triple case (not usable) -->
+  <section>
+    <div class="container">
+      <div class="tutorial">
+        <div class="tutorial__tittle">
+          Free Monthly Tutorials To Help You With Your Project
+        </div>
+        <div class="tutorial_content">
+          <div class="tutorial__item">
+            <div class="box__img">
+              <img src="img/webdesign.jpg" alt="">
+            </div>
+            <div class="box__tittle">
+              Web Design Tutorials
+            </div>
+          </div>
+          <div class="tutorial__item">
+            <div class="box__img">
+              <img src="img/wp_tutorial.jpg" alt="">
+            </div>
+            <div class="box__tittle">
+              WordPress Tutorials
+            </div>
+          </div>
+          <div class="tutorial__item">
+            <div class="box__img">
+              <img src="img/html_tutorial.jpg" alt="">
+            </div>
+            <div class="box__tittle">
+              HTML & CSS Tutorials
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section -->
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__blocks">
+          <div class="blocks__item blocks__item-about">
+            <div class="item__tittle">
+              About Company
+              <div class="item__tittle-hr"></div>
+            </div>
+            <div class="item__first-text">
+              Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit
+              amet urna iat.Praesent vel rutrum purus.
+            </div>
+            <div class="item__geo">
+              <div class="geo-ico"></div>PO Box 16122 Collins Street West
+              Victoria 8007 Australia
+            </div>
+            <div class="item__tel">
+              <div class="tel-ico"></div>
+              <a href="tel:61383766284">+61 3 8376 6284</a>
+            </div>
+          </div>
+          <div class="blocks__item small-width">
+            <div class="item__tittle">
+              Join Our Community
+              <div class="item__tittle-hr"></div>
+            </div>
+            <ul class="item__links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Forums</a></li>
+              <li><a href="#">Become an Author</a></li>
+              <li><a href="#">Community Meetups</a></li>
+              <li><a href="#">Become an Affiliate</a></li>
+            </ul>
+          </div>
+          <div class="blocks__item small-width">
+            <div class="item__tittle">
+              Need Help?
+              <div class="item__tittle-hr"></div>
+            </div>
+            <ul class="item__links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Foxtar Market Terms</a></li>
+              <li><a href="#">Author Terms</a></li>
+              <li><a href="#">Foxtar Licenses</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="blocks__item blocks__item-social">
+            <div class="item__tittle">
+              Follow Us On
+              <div class="item__tittle-hr"></div>
+            </div>
+            <ul class="footer__social-sprite">
+              <li class="bg-facebook_ico"><a href="#"></a></li>
+              <li class="bg-linkedin_ico"><a href="#"></a></li>
+              <li class="bg-pinterest_ico"><a href="#"></a></li>
+              <li class="bg-twitter_ico"><a href="#"></a></li>
+              <li class="bg-youtube_ico"><a href="#"></a></li>
+            </ul>
+            <div class="footer_last-text">
+              Newsletter Sign Up!
+            </div>
+            <div class="footer__user-email">
+              <input type="text" placeholder="E-mail Address">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end content -->
+    <div class="footer__bottom">
+      © 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="libs/nouislider.js"></script>
+  <script src="js/range-slider.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
