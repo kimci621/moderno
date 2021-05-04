@@ -5,7 +5,7 @@ noUiSlider.create(slider, {
   connect: true,
   step: 1,
   range: {
-    'min': 0,
+    'min': 1,
     'max': 600
   }
 });
@@ -18,11 +18,11 @@ slider.noUiSlider.on('update', function (values, handle) {
   inputs[handle].value = Math.round(values[handle]);
 });
   
-const setslider = (i, value) => {
+var setslider = (i, value) => {
   let arr = [null, null];
   arr[i] = value;
   console.log(arr);
-  setslider.noUiSlider.set(arr);
+  slider.noUiSlider.set(arr);
 };
 
 

@@ -52,6 +52,4 @@ $(function () {
       halfStar: true,
     });
   });
-
-  var mixer = mixitup('.products');
 });

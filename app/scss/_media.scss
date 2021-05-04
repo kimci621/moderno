@@ -33,6 +33,13 @@
   .small-width {
     min-width: 100%;
   }
+  .item__img{
+    height: 200px !important;
+  }
+  .item__name, .item__user{
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+  }
 }
 
 @media (max-width: 405px) {
@@ -40,6 +47,9 @@
     img {
       width: 290px !important;
     }
+  }
+  .why_us__item{
+    max-width: 310px !important;
   }
 
   .products {
