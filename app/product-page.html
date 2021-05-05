@@ -307,11 +307,11 @@
                 Categories
               </div>
               <ul class="categories__naming">
-                <li><a href="#">WordPress <p>(150)</p></a></li>
-                <li><a href="#">Joomla <p>(100)</p></a></li>
-                <li><a href="#">PSD <p>(50)</p></a></li>
-                <li><a href="#">Plugins <p>(60)</p></a></li>
-                <li><a href="#">Components <p>(40)</p></a></li>
+                <li><button type="button" data-filter=".category-wordpress">WordPress <p>(150)</p></button></li>
+                <li><button type="button" data-filter=".category-joomla">Joomla <p>(100)</p></button></li>
+                <li><button type="button" data-filter=".category-psd">PSD <p>(50)</p></button></li>
+                <li><button type="button" data-filter=".category-plugin">Plugins <p>(60)</p></button></li>
+                <li><button type="button" data-filter=".category-component">Components <p>(40)</p></button></li>
               </ul>
             </div>
             <div class="price-slider">
@@ -440,7 +440,7 @@
               <a href="#" class="fa-2"></a>
             </div>
             <div class="content-main__all-content">
-              <div class="item">
+              <div class="item mix category-wordpress" data-order="1">
                 <a href="#" class="item__img"><img src="img/main-content/cube_main.jpg" alt=""></a>
                 <div class="item__name">
                   <div class="item__text">
@@ -465,7 +465,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item mix category-plugin" data-order="2">
                 <a href="#" class="item__img"><img src="img/main-content/apple_main.jpg" alt=""></a>
                 <div class="item__name">
                   <div class="item__text">
@@ -490,7 +490,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item mix category-plugin" data-order="3">
                 <a href="#" class="item__img"><img src="img/main-content/wp_main.jpg" alt=""></a>
                 <div class="item__name">
                   <div class="item__text">
@@ -515,7 +515,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item mix category-psd" data-order="4">
                 <a href="#" class="item__img"><img src="img/main-content/voice_main.jpg" alt=""></a>
                 <div class="item__name">
                   <div class="item__text">
@@ -540,7 +540,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item mix category-psd" data-order="5">
                 <a href="#" class="item__img"><img src="img/main-content/book_main.jpg" alt=""></a>
                 <div class="item__name">
                   <div class="item__text">
@@ -565,7 +565,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item mix category-component" data-order="6">
                 <a href="#" class="item__img"><img src="img/main-content/keyboard_main.jpg" alt=""></a>
                 <div class="item__name">
                   <div class="item__text">
@@ -590,7 +590,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item mix category-joomla" data-order="7">
                 <a href="#" class="item__img"><img src="img/main-content/user_main.jpg" alt=""></a>
                 <div class="item__name">
                   <div class="item__text">
@@ -615,7 +615,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item mix category-psd" data-order="8">
                 <a href="#" class="item__img"><img src="img/main-content/tg_main.jpg" alt=""></a>
                 <div class="item__name">
                   <div class="item__text">
@@ -640,7 +640,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item mix category-wordpress" data-order="9">
                 <a href="#" class="item__img"><img src="img/main-content/ie_main.jpg" alt=""></a>
                 <div class="item__name">
                   <div class="item__text">
@@ -665,7 +665,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item mix category-psd" data-order="10">
                 <a href="#" class="item__img"><img src="img/main-content/github_main.jpg" alt=""></a>
                 <div class="item__name">
                   <div class="item__text">
@@ -690,7 +690,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item mix category-component" data-order="11">
                 <a href="#" class="item__img"><img src="img/main-content/wp_brown_main.jpg" alt=""></a>
                 <div class="item__name">
                   <div class="item__text">
@@ -715,7 +715,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item mix category-psd" data-order="12">
                 <a href="#" class="item__img"><img src="img/main-content/link_main.jpg" alt=""></a>
                 <div class="item__name">
                   <div class="item__text">
@@ -838,7 +838,7 @@
   <script src="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
   <script src="libs/nouislider.js"></script>
   <script src="js/range-slider.js"></script>
-  <script src="js/mixit.js"></script>
+  <script src="js/mixit-products.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/main.js"></script>

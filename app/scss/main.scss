@@ -1460,13 +1460,15 @@ input::-webkit-inner-spin-button {
       max-width: 210px;
       position: relative;
       padding-left: 20px;
-      a {
+      button {
         font-size: 15px;
         line-height: 15px;
         font-weight: 400;
         color: #263238;
         display: flex;
         justify-content: space-between;
+        border: none;
+        background-color: transparent;
         p {
           color: #90a4ae;
         }
