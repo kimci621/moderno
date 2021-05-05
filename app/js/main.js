@@ -18,8 +18,8 @@ $(function () {
       arrows: false,
       dots: true,
       infinite: false,
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: 4,
+      slidesToScroll: 4,
     });
   });
   if (window.matchMedia('(max-width: 1000px)').matches) {
@@ -40,9 +40,16 @@ $(function () {
       slidesToScroll: 2,
     });
   };
-  // 
-  // 
-  // 
+  if (window.matchMedia('(max-width: 1879px)').matches) {
+    $(".products__slider").slick({
+      arrows: false,
+      dots: true,
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+    });
+  };
+  
 
   $(function () {
     $(".rateyo").rateYo({

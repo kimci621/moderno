@@ -43,6 +43,7 @@
 }
 
 @media (max-width: 405px) {
+
   .tutorial .tutorial_content .tutorial__item .box__img {
     img {
       width: 290px !important;
@@ -100,6 +101,10 @@
   }
 }
 @media (max-width: 350px) {
+  .header__btn-green.deactive,
+  .header__btn-red.deactive{
+    max-width: 64px;
+  }
   #animatedModal {
     padding: 20px;
   }
