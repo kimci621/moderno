@@ -12,6 +12,20 @@ $(function () {
   $('.menu-burger').on('click', function () {
     $('.menu__list').toggleClass('--active');
   });
+  
+  $('.fa-2').on('click', function () {
+    $('.item').toggleClass('--disable');
+    $('.item').removeClass('--active');
+    $('.item-horizontal').toggleClass('--active');
+    $('.item-horizontal').removeClass('--disable');
+  });
+
+  $('.fa').on('click', function () {
+    $('.item').toggleClass('--active');
+    $('.item').removeClass('--disable');
+    $('.item-horizontal').removeClass('--active');
+    $('.item-horizontal').toggleClass('--disable');
+  });
 
   $(function () {
     $(".products__slider").slick({
