@@ -165,3 +165,26 @@ body .container-fluid {
 .products-page-bg{
   background-color: #f4f6f5;
 }
+.breadcrumbs {
+  padding-top: 49px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: start;
+  a,
+  span {
+    margin: 0;
+    padding: 0;
+    margin-right: 8px;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
+    color: $bg-grey;
+  }
+  span {
+    color: #b0bec5;
+  }
+  a{
+    border-right: 1px solid $bg-grey;
+    padding-right: 10px;
+  }
+}
