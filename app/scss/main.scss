@@ -1951,54 +1951,65 @@ input::-webkit-inner-spin-button {
       }
       margin-bottom: 55px;
     }
-    &__tabs {
-      width: 870px;
+
+    .wrapper-tabs {
+      width: 868px;
       height: 324px;
       border: 1px solid #d7d7d7;
       margin-bottom: 52px;
-      .tabs-tittles {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 37px;
-        .tittle {
-          font-size: 16px;
-          line-height: 16px;
-          font-weight: 500;
-          color: #263238;
-          width: 225px;
-          text-align: center;
-          padding: 24px;
-          border-bottom: 1px solid #d7d7d7;
-          & + .tittle {
-            border-left: 1px solid #d7d7d7;
-          }
+    }
+
+    .tabs {
+      li {
+        list-style: none;
+        float: left;
+        width: 25%;
+      }
+      a {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
+        color: #263238;
+        width: 217px;
+        text-align: center;
+        padding: 24px;
+        border-bottom: 1px solid #d7d7d7;
+        &:hover,
+        &.active {
+          border-bottom-color: $color-green;
+          color: $color-green;
         }
       }
-      .tabs-info {
+    }
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .tabgroup {
+      .text {
         display: flex;
-        justify-content: start;
-        padding: 0 38px;
-        font-size: 15px;
-        line-height: 36px;
+        justify-content: space-between;
+        padding: 20px 70px 20px 50px;
+        font-size: 16px;
+        line-height: 16px;
         font-weight: 400;
         color: #707070;
         li {
+          padding-bottom: 22px;
+          display: block;
+          padding-left: 20px;
           position: relative;
         }
         li::before {
           position: absolute;
           font-family: "icomoon";
-          color: $color-green;
-          left: -20px;
-          content: "\e909";
-        }
-        .text.feature {
-          display: flex;
-          justify-content: space-between;
-          .left,
-          .right {
-            width: 260px;
-          }
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 400;
+          color: #8bc34a;
+          content: "\e900";
+          left: 0;
         }
       }
     }
@@ -2057,8 +2068,8 @@ input::-webkit-inner-spin-button {
     }
   }
 
-  .aside-info {
-  }
+  // .aside-info {
+  // }
 }
 
 @import "media";
